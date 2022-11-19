@@ -19,8 +19,137 @@ header .container {
     padding: 2% 4%;
 }
 
+.loja {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-column-gap: 3%;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4,23.5%);
+    grid-column-gap:2% ;
+   
+}
+
+.canais{
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    grid-column-gap:2% ;
+
+   
+}
+.canal{
+   text-align: center;
+}
+
+#venda{
+    background-color: aliceblue;
+}
+
+#venda h1{
+    font-family: 'Rammetto One', cursive;
+    color: #3C8C30;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.produtos button{
+    font-family: 'Rammetto One', cursive;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background-color: #3C8C30;
+    color: #F2E9BD;
+    border-style: none;
+    border-radius: 3px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.produtos p{
+    margin: 10px 0;
+}
+.produtos img {
+    width: 100%;
+    height: auto;
+}
+.produtos button:hover{
+    background-color: #ffd76b;
+    color: #3C8C30; 
+}
+
+@media screen and (max-width:768px) {
+ 
+    header .container {
+        display: block;
+    }
+    body > header {
+    
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile{
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .loja {
+        display: block;
+       
+    }
+
+    .loja h2{
+        text-align: center;
+        margin: 10px 0;
+    }
+    .loja p{
+        text-align: justify;
+    }
+
+    .produtos{
+        display: block;
+ 
+       
+    }
+    .produto{
+        margin: 30px 0;
+    }
+
+    .canais{
+        display:block;
+        
+    }
+
+    .canal{
+        
+        margin :30px 0;
+    
+       
+    }
+
+    .sobre ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .brands {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
 header h1{
     font-family: 'Rammetto One', cursive;
+}
+
+.produtos h3{
+    font-family: 'Rammetto One', cursive;
+    color: #3C8C30;
+    text-align: center;
 }
 header li {
     display: inline;
@@ -72,7 +201,8 @@ section .container{
 }
 
 .profile{
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     
 }
 
